@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "./styles.css";
 
 interface Props {
@@ -9,6 +9,9 @@ interface Props {
 // const InputField: React.FC<Props> = ({todo, setTodo}) => ...
 const InputField = ({ todo, setTodo, handleAdd }: Props) => {
   const inputRef = useRef<HTMLInputElement>(null);
+  // useEffect(() => {
+  //   inputRef.current?.focus();
+  // }, []);
   return (
     <form
       className="input"
