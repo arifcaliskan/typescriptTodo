@@ -40,9 +40,11 @@
 }
 .todos {
   display: flex;
-  justify-content: space-evenly;
-  width: 90%;
-  flex-wrap: wrap;
+  width: 47.5%;
+  flex-direction: column;
+  padding: 15px;
+  border-radius: 5px;
+  background-color: rgb(50, 195, 205);
 }
 .todos-single {
   display: flex;
@@ -61,14 +63,6 @@
   align-items: flex-start;
 }
 
-.dragactive {
-  background-color: rgb(0, 221, 236);
-}
-
-.dragcomplete {
-  background-color: rgb(255, 38, 0);
-}
-
 .remove {
   background-color: rgb(235, 103, 80);
 }
@@ -79,7 +73,7 @@
   color: white;
 }
 .drag {
-  box-shadow: 0 0 20px black;
+  box-shadow: 0 0 20px rgb(255, 255, 255);
 }
 
 .todos-single:hover {
@@ -103,7 +97,12 @@
   font-size: 25px;
   cursor: pointer;
 }
-
+.dragactive {
+  background-color: rgb(14, 226, 226);
+}
+.dragcomplete {
+  background-color: red;
+}
 @media (max-width: 1100px) {
   .todos {
     width: 45%;
